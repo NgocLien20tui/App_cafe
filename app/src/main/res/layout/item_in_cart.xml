@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/blue_border_rounded_cornwe">
+
+        <ImageView
+            android:id="@+id/image_cart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/img">
+        </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_product"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:text="Product title"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/btn_remove"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/remove"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/price_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/btn_reduce"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/border"
+                        android:src="@drawable/ic_baseline_remove" />
+
+                    <TextView
+                        android:id="@+id/amount_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_increase"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/border"
+                        android:src="@drawable/ic_baseline_add_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

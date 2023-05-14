@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShopingCartActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.25"
+        tools:listitem="@layout/item_in_cart">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Tổng tiền: "
+            android:textSize="18dp"
+            android:textColor="#FFB10A0A"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            tools:ignore="Suspicious0dp">
+        </TextView>
+        <TextView
+            android:id="@+id/totol_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="01"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:text="0">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="đ"
+            android:textSize="18dp"
+            android:textColor="#FFB10A0A"
+            android:layout_gravity="center">
+        </TextView>
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đặt hàng"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:layout_gravity="center"
+            >
+        </Button>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/bgBottomNavigation"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/navigation" />
+
+
+</LinearLayout>
